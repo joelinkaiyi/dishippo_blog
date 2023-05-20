@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>用 Node.js製作一個Line聊天機器人</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./image/dishippo.jpg" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand">DISHIPPO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">用 Node.js製作一個Line聊天機器人</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on May 21, 2023 by Joey Lin</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light">Node.js</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <figure class="mb-4"><img class="img-fluid rounded" src="./image/nodejs+line.png" alt="..." /></figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">
+                                LINE在全台擁有2200萬的使用者，全球更是擁有高達1.94 億的用戶，
+                               而LINE聊天機器人(Linebot)已成為許多企業和開發者們追逐的焦點。
+                                它們提供了一個互動的平台，使Linebot能夠和用戶進行即時溝通，並且提供信息和解答問題。
+                                今天，這篇文章將會教你如何使用Node.js來製作屬於自己個人的Linebot。
+                            </p>
+                            <h2 class="fw-bolder mb-4 mt-5">那我們開始吧</h2>
+                            <h2 class="fs-5 mb-4">Step 1：安裝 Node.js環境</h2>
+                            <p class="fs-5 mb-4">首先我們要先在電腦上安裝Node.js的運行環境，去到Node.js的官方網站(
+                                <a href="https://nodejs.org/zh-tw/download" class="fs-5 mb-4" target="_blank">https://nodejs.org/zh-tw/download</a>
+                                )選擇自己使用的作業系統安裝檔後點下載並執行安裝檔，之後依照指示完成安裝，第一步就完成啦~</a></p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/nodejsdownload.PNG" alt="..." /></figure>
+                            <h2 class="fs-5 mb-4">Step 2：取得 LINE Channel Secret 與 Access Token</h2>
+                            <p class="fs-5 mb-4">接下來，我們要到Line Developer的官網獲取機器人的channel secret和access token，首先要先到Line Developer的網站(
+                                <a href="https://developers.line.biz/zh-hant/" class="fs-5 mb-4" target="_blank">https://developers.line.biz/zh-hant/</a>
+                                )並登入自己的LINE帳號之，登入成功後會進到開發者的頁面</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/nodejsdownload.PNG" alt="..." /></figure>
+                        </section>
+                    </article>
+
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">作者介紹</div>
+
+                        <div class="card-body">
+                            <img class="rounded-circle" alt="avatar1" src="./image/author.jpg" width="128" />
+                            <p class="fs-5 mb-4">Joey Lin</p>
+                            <p class="fs-5 mb-4">準大學生，目前正在學習網頁框架和吉他，未來希望能夠當上一名電腦工程師，興趣是看動漫、唱日文歌和學習語言，對自己最不滿意的點是他的自然捲髮，最喜歡的零食是樂事洋芋片(瑞士起司口味)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; DISHIPPO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
