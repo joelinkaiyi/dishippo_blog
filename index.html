@@ -62,18 +62,18 @@
                             <h2 class="fs-5 mb-4">Step 3：開始寫程式啦~</h2>
                             <p class="fs-5 mb-4">進到vscode之後，首先，我們要先來安裝我們需要的套件。</p>
                             <p class="fs-5 mb-4">Linebot Node.js SDK</p>
-                            <pre class="fs-5 mb-4" style="background: #ffffe6">npm install @line/bot-sdk --save</pre>
+                            <pre class="fs-6 mb-5" style="background: #ffffe6">npm install @line/bot-sdk --save</pre>
                             <p class="fs-5 mb-4">dotenv</p>
-                            <pre class="fs-5 mb-4" style="background: #ffffe6" >npm install dotenv</pre>
+                            <pre class="fs-6 mb-5" style="background: #ffffe6" >npm install dotenv</pre>
                             <p class="fs-5 mb-4">express</p>
-                            <pre class="fs-5 mb-4" style="background: #ffffe6" >npm install express</pre>
+                            <pre class="fs-6 mb-5" style="background: #ffffe6" >npm install express</pre>
                             <p class="fs-5 mb-4">下載完之後，我們可以到package.json這個檔案查看有沒有下載成功</p>
                             <figure class="mb-4"><img class="img-fluid rounded" src="./image/packagejson.png" alt="..." /></figure>
                             <p class="fs-5 mb-4">接著，我們要創建一個名為index.js的檔案，這是機器人的主程式</p>
                             <p class="fs-5 mb-4">再創建一個名為.env的檔案，裡面儲存你的channel secret和channel access token</p>
                             <h2 class="fs-5 mb-4">程式碼解釋</h2>
                             <p class="fs-5 mb-4">首先，我們要先引入所需的套件</p>
-                            <code class="fs-5 mb-4" >
+                            <code class="fs-6 mb-5" >
                                const line=require('@line/bot-sdk');<br>
                                 const express=require('express');<br>
                                 const dotenv=require('dotenv').config();<br>
@@ -81,7 +81,7 @@
                             </code>
 
                             <p class="fs-5 mb-4">接下來，我們要建立一個與Line平台進行通訊的用戶端(client)</p>
-                            <code class="fs-5 mb-4" >
+                            <code class="fs-6 mb-5" >
                                 const config={
                                 channelSecret:process.env.CHANNEL_SECRET,
                                 channelAccessToken:process.env.CHANNEL_ACCESS_TOKEN
@@ -89,7 +89,7 @@
                                 const client=new line.Client(config);
                             </code>
                             <p class="fs-5 mb-4">之後，我們要處理Line Messaging API的callback</p>
-                            <code class="fs-5 mb-4" >
+                            <code class="fs-6 mb-5" >
                                 app.post('/callback', line.middleware(config), (req, res) => {
                                 console.log(req, res)
                                 Promise
@@ -102,7 +102,7 @@
                                 });
                             </code>
                             <p class="fs-5 mb-4">現在，我們要建立一個處理Line Messaging API事件的函式，並且讓你的機器人可以重複你傳的訊息</p>
-                            <code class="fs-5 mb-4" >
+                            <code class="fs-6 mb-5" >
                                 function handleEvent(event) {
                                 if (event.type !== 'message' || event.message.type !== 'text') {
                                 return Promise.resolve(null);
@@ -112,7 +112,7 @@
                                 }
                             </code>
                             <p class="fs-5 mb-4">最後，我們要設定在電腦上的監聽port</p>
-                            <code class="fs-5 mb-4" >
+                            <code class="fs-6 mb-5" >
                                 const port = process.env.PORT || 3000;
                                 app.listen(port, () => {
                                 console.log(`listening on ${port}`);
