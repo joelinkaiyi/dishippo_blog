@@ -42,7 +42,7 @@
                                 LINE在全台擁有2200萬的使用者，全球更是擁有高達1.94 億的用戶，
                                而LINE聊天機器人(Linebot)已成為許多企業和開發者們追逐的焦點。
                                 它們提供了一個互動的平台，使Linebot能夠和用戶進行即時溝通，並且提供信息和解答問題。
-                                今天，這篇文章將會教你如何使用Node.js來製作屬於自己個人的Linebot。
+                                今天，這篇文章將會教你如何使用Node.js來製作屬於自己個人的Linebot(本篇範例使用Visual Studio Code來寫程式)。
                             </p>
                             <h2 class="fw-bolder mb-4 mt-5">那我們開始吧</h2>
                             <h2 class="fs-5 mb-4">Step 1：安裝 Node.js環境</h2>
@@ -53,8 +53,18 @@
                             <h2 class="fs-5 mb-4">Step 2：取得 LINE Channel Secret 與 Access Token</h2>
                             <p class="fs-5 mb-4">接下來，我們要到Line Developer的官網獲取機器人的channel secret和access token，首先要先到Line Developer的網站(
                                 <a href="https://developers.line.biz/zh-hant/" class="fs-5 mb-4" target="_blank">https://developers.line.biz/zh-hant/</a>
-                                )並登入自己的LINE帳號之，登入成功後會進到開發者的頁面</p>
-                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/nodejsdownload.PNG" alt="..." /></figure>
+                                )並登入自己的LINE帳號之，登入成功後會進到開發者的頁面，接著點選右上角的 Log In並登入自己的LINE帳號</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/Linedeveloperpage.png" alt="..." /></figure>
+                            <p class="fs-5 mb-4">進到主控台並建立完一個機器人後，我們要到 Basic setting的欄位去獲取channel secret，並到Messaging API欄位找到channel access token並生成一個token</p>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/channelsecret.png" alt="..." /></figure>
+                            <figure class="mb-4"><img class="img-fluid rounded" src="./image/channelaccesstoken.png" alt="..." /></figure>
+                            <pre class="fs-5 mb-4" style="background: #ffffe6">⚠請注意，channel secret和channel access token都務必保管好，不要洩漏出去，否則你的機器人可能會被有心人士利用</pre>
+                            <h2 class="fs-5 mb-4">Step 3：開始寫程式啦~</h2>
+                            <p class="fs-5 mb-4">進到vscode之後，首先，我們要先來安裝我們需要的套件。</p>
+                            <p class="fs-5 mb-4">Linebot Node.js SDK</p>
+                            <pre class="fs-5 mb-4" style="background: #ffffe6">npm install linebot --save</pre>
+                            <p class="fs-5 mb-4">dotenv</p>
+                            <pre class="fs-5 mb-4" style="background: #ffffe6" >npm install dotenv</pre>
                         </section>
                     </article>
 
