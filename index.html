@@ -15,7 +15,9 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand">DISHIPPO</a>
+                <a class="navbar-brand">
+                    <h1 class="fs-2 mb-1">DISHIPPO</h1>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </div>
         </nav>
@@ -72,6 +74,14 @@
                             <p class="fs-5 mb-4">接著，我們要創建一個名為index.js的檔案，這是機器人的主程式</p>
                             <p class="fs-5 mb-4">再創建一個名為.env的檔案，裡面儲存你的channel secret和channel access token</p>
                             <h2 class="fs-5 mb-4">程式碼解釋</h2>
+                            <h2 class="fs-5 mb-4">.env</h2>
+                            <code class="fs-6 mb-5" >
+                            CHANNEL SECRET='你的CHANNEL SECRET'<br>
+                            CHANNEL_ACCESS_TOKEN='你的CHANNEL_ACCESS_TOKEN'
+                        </code>
+
+                            <pre class="fs-5 mb-4"></pre>
+                            <h2 class="fs-5 mb-4">index.js</h2>
                             <p class="fs-5 mb-4">首先，我們要先引入所需的套件</p>
                             <code class="fs-6 mb-5" >
                                const line=require('@line/bot-sdk');<br>
